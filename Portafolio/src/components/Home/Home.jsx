@@ -1,14 +1,25 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import lado1 from "/src/assets/lado1.jpg";
-// import lado2 from "/src/assets/lado2.jpg";
+import css from "/src/assets/css.svg";
+import angular from "/src/assets/angular.svg";
+import html from "/src/assets/html.svg";
+import asana from "/src/assets/asana.svg";
+import react from "/src/assets/react.svg";
+import python from "/src/assets/python.svg";
+import nodejs from "/src/assets/nodejs.svg";
+import github from "/src/assets/github.svg";
+import nestjs from "/src/assets/nestjs.svg";
+import mysql from "/src/assets/mysql.svg";
+import javascript from "/src/assets/javascript.svg";
+import portada from "/src/assets/portada.jpg";
 
 const proyectosData = [
   {
     id: 3,
     titulo: "Software de agendamiento de citas para centro de estética",
     año: "2024",
-    img: "/src/assets/portada.jpg",
+    img: portada,
     descripcion:
       "Desarrollo completo de un sistema de agendamiento de citas para un centro de estética facial. Manejando la lógica de agendamiento, bloqueo de horas, gestión de usuarios y servicios. Además, trabajé en equipo utilizando metodologías ágiles, colaborando con otros desarrolladores para integrar funcionalidades y asegurar la calidad del software.",
     tecnologias: ["React", "Node.js", "Supabase"],
@@ -92,103 +103,67 @@ const Home = () => {
         <h1 className="skills-title">Tecnologías</h1>
         <div className="skills-grid">
           <div className="skill-card">
-            <img src="/src/assets/html.svg" alt="HTML" className="skill-icon" />
+            <img src={html} alt="html" className="skill-icon" />
             <p className="skill-name">Html</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img src="/src/assets/css.svg" alt="CSS" className="skill-icon" />
+            <img src={css} alt="Css" className="skill-icon" />
             <p className="skill-name">Css</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/react.svg"
-              alt="React"
-              className="skill-icon"
-            />
+            <img src={react} alt="React" className="skill-icon" />
             <p className="skill-name">React</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/javascript.svg"
-              alt="Javascript"
-              className="skill-icon"
-            />
+            <img src={javascript} alt="Javascript" className="skill-icon" />
             <p className="skill-name">JavasCript</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/asana.svg"
-              alt="Asana"
-              className="skill-icon"
-            />
+            <img src={asana} alt="Asana" className="skill-icon" />
             <p className="skill-name">Asana</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/angular.svg"
-              alt="Angular"
-              className="skill-icon"
-            />
+            <img src={angular} alt="Angular" className="skill-icon" />
             <p className="skill-name">Angular</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/python.svg"
-              alt="Python"
-              className="skill-icon"
-            />
+            <img src={python} alt="Python" className="skill-icon" />
             <p className="skill-name">Python</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/javascript.svg"
-              alt="JavaScript"
-              className="skill-icon"
-            />
-            <p className="skill-name">JavaScript</p>
+            <img src={mysql} alt="Mysql" className="skill-icon" />
+            <p className="skill-name">Msyql</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/nestjs.svg"
-              alt="nestjs"
-              className="skill-icon"
-            />
+            <img src={nestjs} alt="Nestjs" className="skill-icon" />
             <p className="skill-name">Nestjs</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/nodejs.svg"
-              alt="nodejs"
-              className="skill-icon"
-            />
+            <img src={nodejs} alt="Nodejs" className="skill-icon" />
             <p className="skill-name">Nodejs</p>
             <div className="skill-glow"></div>
           </div>
 
           <div className="skill-card">
-            <img
-              src="/src/assets/github.svg"
-              alt="Git"
-              className="skill-icon"
-            />
+            <img src={github} alt="Github" className="skill-icon" />
             <p className="skill-name">Git</p>
             <div className="skill-glow"></div>
           </div>
@@ -202,7 +177,7 @@ const Home = () => {
             <div className="proyecto-card" key={proyecto.id}>
               <div className="proyecto-imagen">
                 <img
-                  src={proyecto.img} // Usamos la propiedad img del objeto
+                  src={proyecto.img}
                   alt={proyecto.titulo}
                   className="proyecto-img"
                 />
