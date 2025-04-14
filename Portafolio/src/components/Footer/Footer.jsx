@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FileText, BookOpen, Code, Star, Heart } from "lucide-react";
-import curriculumPDF from "../../../public/Curriculum Nathalia Salguero.pdf";
+import curriculumPDF from "../../../public/CurriculumNs.pdf";
 
 
 const Footer = () => {
